@@ -4,13 +4,40 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         rel="stylesheet">
        <link href = "CSS/main.css" rel = "stylesheet" type = "text/css" >
-       <!-- <title>Title</title> -->
-       <!-- <link href = "IMG/icon.png" rel="icon" type="image/gif"> -->
+       <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+       <title>Online Diary</title>
+       <link href = "IMG/icon.png" rel="icon" type="image/gif">
     </head>
     <body>
+        <div class = "row">
+            <div class = "jumbotron">
+                <div class = "container-fluid">
+                    <div id = "time">
+                        <p>time</p>
+                    </div>
+                    <center>
+                        <div class = "border">
+                            <h1 id = "title" contenteditable = "true"></h1>
+                        </div>
+
+                        <p><span class = "version">v1.0</span></p>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+            <div class = "diary" contenteditable="true">
+                <div id = "date">
+                        document.getElementById("demo").innerHTML = Date();
+                </div>
+                    <div id="content" contenteditable="true">
+                        <p>Click on me to get started!</p>
+                    </div>
+            </div>
  
         <!-- JAVA LINKS -->
         <script type="text/javascript" src="JS/jquery-3.3.1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typeit@5.5.2/dist/typeit.min.js"></script>
         <script type="text/javascript" src="JS/scripts.js"></script>
     </body>
 </html>
