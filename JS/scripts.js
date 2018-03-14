@@ -46,7 +46,7 @@ setInterval
 localStorage['text'] = document.getElementById('content').innerHTML; // content div
 }, 1000);
 
-if (localStorage['text'] = "undefined") {
+if (document.getElementById('content').innerHTML = "undefined") {
   document.getElementById('content').innerHTML = "Click on me to get started"
 }
 
