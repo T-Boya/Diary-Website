@@ -63,3 +63,12 @@ body {
     color: gray;
     opacity: 80%;
 }
+
+@media only screen and (max-width: 768px) {
+    .border {
+        margin-top: 10vh;
+    }
+    .container-fluid {
+        height: 40vh;
+    }
+}
