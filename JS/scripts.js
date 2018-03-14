@@ -1,3 +1,4 @@
+window.onload = function () {
 var instance = new TypeIt('#title', {
   strings: " Your Diary"
 });
@@ -11,7 +12,7 @@ setTimeout(() => {
 setTimeout(() => {
   instance.unfreeze();
 }, 3000);
-
+}
 
 
 
@@ -39,15 +40,13 @@ setTimeout(() => {
   startTime();
 })();
 
-document.getElementById('content').innerHTML = localStorage['text']; 'Click here to get startes' // default text
+window.onload = function () {
+document.getElementById('content').innerHTML = localStorage['text']; // default text
 setInterval
 
 (function() { // fuction that is saving the innerHTML of the div
 localStorage['text'] = document.getElementById('content').innerHTML; // content div
 }, 1000);
-
-if (localStorage['text'] = undefined) {
-  document.getElementById('content').innerHTML = "Click on me to get started"
 }
 
 document.getElementById("date").innerHTML = Date();
