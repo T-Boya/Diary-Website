@@ -38,13 +38,18 @@ setTimeout(() => {
 
 document.getElementById("date").innerHTML = Date();
 
-window.onload = function () {
-document.getElementById('content').innerHTML = localStorage['text']; // default text
-setInterval
-
-(function() { // fuction that is saving the innerHTML of the div
-localStorage['text'] = document.getElementById('content').innerHTML; // content div
-}, 1000);
+if (document.getElementById('content').innerHTML = undefined) {
+  document.getElementById('content').innerHTML; = "Click on me to get started";
 }
+else {
 
+  window.onload = function () {
+    document.getElementById('content').innerHTML = localStorage['text']; // default text
+    setInterval
+    
+    (function() { // fuction that is saving the innerHTML of the div
+    localStorage['text'] = document.getElementById('content').innerHTML; // content div
+    }, 1000);
+    }
 
+}
