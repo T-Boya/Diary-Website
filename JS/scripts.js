@@ -39,6 +39,9 @@ setTimeout(() => {
 
 document.getElementById("date").innerHTML = Date();
 
+if (document.getElementById('content').innerHTML = null) {
+  document.getElementById('content').innerHTML = "Click on me to get started";
+}
 if (document.getElementById('content').innerHTML = undefined) {
   document.getElementById('content').innerHTML = "Click on me to get started";
 }
