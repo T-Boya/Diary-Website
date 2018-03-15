@@ -1,8 +1,7 @@
-window.onload = function () {
 var instance = new TypeIt('#title', {
   strings: " Your Diary"
 });
- 
+
 //-- Pause after one second.
 setTimeout(() => {
   instance.freeze();
@@ -12,9 +11,6 @@ setTimeout(() => {
 setTimeout(() => {
   instance.unfreeze();
 }, 3000);
-}
-
-
 
 (function () {
   function checkTime(i) {
@@ -40,6 +36,8 @@ setTimeout(() => {
   startTime();
 })();
 
+document.getElementById("date").innerHTML = Date();
+
 window.onload = function () {
 document.getElementById('content').innerHTML = localStorage['text']; // default text
 setInterval
@@ -49,4 +47,4 @@ localStorage['text'] = document.getElementById('content').innerHTML; // content 
 }, 1000);
 }
 
-document.getElementById("date").innerHTML = Date();
+
