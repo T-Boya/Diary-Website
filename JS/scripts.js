@@ -12,6 +12,7 @@ setTimeout(() => {
   instance.unfreeze();
 }, 3000);
 
+
 (function () {
   function checkTime(i) {
       return (i < 10) ? "0" + i : i;
@@ -39,7 +40,7 @@ setTimeout(() => {
 document.getElementById("date").innerHTML = Date();
 
 if (document.getElementById('content').innerHTML = undefined) {
-  document.getElementById('content').innerHTML; = "Click on me to get started";
+  document.getElementById('content').innerHTML = "Click on me to get started";
 }
 else {
 
